@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Proyecto</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- Barra de navegación fija en la parte superior -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Mi Proyecto</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Banner de la página principal -->
+    <div class="container-fluid mt-5 pt-5">
+        <div class="row">
+            <div class="col-12">
+                <img src="img/banner.jpg" class="img-fluid" alt="Banner Promocional">
+            </div>
+        </div>
+    </div>
+
+    <!-- Breadcrumbs -->
+    <nav aria-label="breadcrumb" class="mt-4">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Productos</li>
+        </ol>
+    </nav>
+
+    <!-- Listado de productos utilizando Card -->
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/product1.jpg" class="card-img-top" alt="Producto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Producto 1</h5>
+                        <p class="card-text">Descripción del producto 1.</p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/product2.jpg" class="card-img-top" alt="Producto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Producto 2</h5>
+                        <p class="card-text">Descripción del producto 2.</p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/product3.jpg" class="card-img-top" alt="Producto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Producto 3</h5>
+                        <p class="card-text">Descripción del producto 3.</p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Formulario de contacto -->
+    <div class="container my-4">
+        <h3>Contáctanos</h3>
+        <form>
+            <div class="form-group">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo">
+            </div>
+            <div class="form-group">
+                <label for="select">Selecciona un servicio</label>
+                <select class="form-control" id="select">
+                    <option value="1">Servicio 1</option>
+                    <option value="2">Servicio 2</option>
+                    <option value="3">Servicio 3</option>
+                </select>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="subscribe">
+                <label class="form-check-label" for="subscribe">Suscribirse al boletín</label>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Escribe tu mensaje"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+
+    <!-- Tabla con scroll y iconos -->
+    <div class="container my-4">
+        <h3>Tabla de Productos</h3>
+        <div style="overflow-x:auto;">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th><span class="oi oi-list" title="icon name" aria-hidden="true"></span> Producto</th>
+                        <th><span class="oi oi-cart" title="icon name" aria-hidden="true"></span> Descripción</th>
+                        <th><span class="oi oi-plus" title="icon name" aria-hidden="true"></span> Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Producto 1</td>
+                        <td>Descripción del producto 1</td>
+                        <td><button class="btn btn-info">Ver</button></td>
+                    </tr>
+                    <tr>
+                        <td>Producto 2</td>
+                        <td>Descripción del producto 2</td>
+                        <td><button class="btn btn-info">Ver</button></td>
+                    </tr>
+                    <tr>
+                        <td>Producto 3</td>
+                        <td>Descripción del producto 3</td>
+                        <td><button class="btn btn-info">Ver</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-3">
+        <p>&copy; 2025 Mi Proyecto</p>
+    </footer>
+</body>
+</html>
+body {
+    padding-top: 80px; /* Para que no se superponga el contenido con la barra fija */
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+footer {
+    margin-top: 30px;
+}

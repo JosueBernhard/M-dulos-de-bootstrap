@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Proyecto</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron text-center">
+        <h1 class="display-4">Mi Proyecto</h1>
+    </div>
+
+    <!-- Container with 3 paragraphs -->
+    <div class="container">
+        <h2>Características</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Características 1</h3>
+                <p>Descripción de la característica 1.</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Características 2</h3>
+                <p>Descripción de la característica 2.</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Características 3</h3>
+                <p>Descripción de la característica 3.</p>
+            </div>
+        </div>
+
+        <!-- List of products -->
+        <h2>Lista de Productos</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="product">
+                    <h4>Producto 1</h4>
+                    <p>Descripción del producto 1.</p>
+                    <button class="btn btn-primary">Ver más</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="product">
+                    <h4>Producto 2</h4>
+                    <p>Descripción del producto 2.</p>
+                    <button class="btn btn-primary">Ver más</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="product">
+                    <h4>Producto 3</h4>
+                    <p>Descripción del producto 3.</p>
+                    <button class="btn btn-primary">Ver más</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <address>
+            <p>Dirección Comercial: Calle Ficticia 123</p>
+        </address>
+        <div>
+            <p>Síguenos en nuestras redes sociales:</p>
+            <p>Facebook | Twitter | Instagram</p>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
+.product {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer address {
+    font-style: normal;
+}
+
+footer .text-center {
+    text-align: center;
+}
+
+.product h4 {
+    font-size: 1.5rem;
+}
+
+.product p {
+    font-size: 1rem;
+}
+<div class="d-flex flex-wrap justify-content-between">
+    <div class="product col-md-4">
+        <!-- Producto 1 -->
+    </div>
+    <div class="product col-md-4">
+        <!-- Producto 2 -->
+    </div>
+    <div class="product col-md-4">
+        <!-- Producto 3 -->
+    </div>
+</div>
